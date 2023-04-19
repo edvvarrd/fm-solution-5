@@ -1,6 +1,6 @@
 :root {
   --primary: #0079ff;
-  --primary-active: #90a4d4;
+  --primary-active: #60abff;
   --secondary: #2b3442;
   --secondary-active: #2b3442;
   --logo: #2b3442;
@@ -140,7 +140,7 @@ header .toggleTheme:hover {
   font-size: 1.3rem;
 }
 .search__enter {
-  padding: 1.3em 1.1em;
+  padding: 1.2em 1.5em;
   background-color: var(--primary);
   border: none;
   border-radius: 12px;
@@ -149,4 +149,7 @@ header .toggleTheme:hover {
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   cursor: pointer;
+}
+.search__enter:hover {
+  background-color: var(--primary-active);
 }/*# sourceMappingURL=main.css.map */

@@ -73,7 +73,7 @@ header {
 		font-size: 1.3rem;
 	}
 	&__enter {
-		padding: 1.3em 1.1em;
+		padding: 1.2em 1.5em;
 		background-color: var(--primary);
 		border: none;
 		border-radius: 12px;
@@ -82,5 +82,8 @@ header {
 		font-size: 1.4rem;
 		letter-spacing: 0.1rem;
 		cursor: pointer;
+		&:hover {
+			background-color: var(--primary-active);
+		}
 	}
 }
