@@ -1,0 +1,86 @@
+@use 'colors';
+@use 'reset';
+@use 'components';
+@use 'medium';
+@use 'big';
+
+// BODY
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background);
+	font-family: 'Space Mono', monospace;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	color: var(--text);
+}
+.app {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+// HEADER
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 0;
+	.logo {
+		color: var(--logo);
+	}
+	.toggleTheme {
+		display: flex;
+		align-items: center;
+		font-size: 1.3rem;
+		font-weight: 700;
+		color: var(--text);
+		letter-spacing: 0.4rem;
+		text-transform: uppercase;
+		border: none;
+		background: none;
+		cursor: pointer;
+		svg {
+			margin-left: 0.5em;
+			width: 2rem;
+			height: 2rem;
+		}
+		&:hover {
+			color: var(--secondary-active);
+		}
+	}
+}
+
+// SEARCH INPUT
+.search {
+	display: flex;
+	gap: 0.6em;
+	align-items: center;
+	padding: 0.3em 0.5em;
+	background-color: var(--content-background);
+	border-radius: 12px;
+	box-shadow: var(--shadow);
+	&__icon {
+		width: 2.5rem;
+		height: 2.5rem;
+		margin: 0.4em;
+	}
+	&__input {
+		all: unset;
+		width: 100%;
+		font-size: 1.3rem;
+	}
+	&__enter {
+		padding: 1.3em 1.1em;
+		background-color: var(--primary);
+		border: none;
+		border-radius: 12px;
+		color: #fff;
+		font-weight: 700;
+		font-size: 1.4rem;
+		letter-spacing: 0.1rem;
+		cursor: pointer;
+	}
+}
