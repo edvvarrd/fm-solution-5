@@ -72,6 +72,13 @@ a:hover {
   text-decoration: underline;
 }
 
+.content {
+  display: flex;
+  background-color: var(--content-background);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -121,13 +128,9 @@ header .toggleTheme:hover {
 }
 
 .search {
-  display: flex;
   gap: 0.6em;
   align-items: center;
   padding: 0.5em 0.5em;
-  background-color: var(--content-background);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
 }
 .search__icon {
   width: 2.5rem;
@@ -152,4 +155,8 @@ header .toggleTheme:hover {
 }
 .search__enter:hover {
   background-color: var(--primary-active);
+}
+
+.result {
+  min-height: 50vh;
 }/*# sourceMappingURL=main.css.map */

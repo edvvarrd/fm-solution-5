@@ -55,13 +55,9 @@ header {
 
 // SEARCH INPUT
 .search {
-	display: flex;
 	gap: 0.6em;
 	align-items: center;
 	padding: 0.5em 0.5em;
-	background-color: var(--content-background);
-	border-radius: 12px;
-	box-shadow: var(--shadow);
 	&__icon {
 		width: 2.5rem;
 		height: 2.5rem;
@@ -86,4 +82,9 @@ header {
 			background-color: var(--primary-active);
 		}
 	}
+}
+
+// RESULT
+.result {
+	min-height: 50vh;
 }

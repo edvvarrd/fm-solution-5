@@ -32,3 +32,9 @@ a {
 		text-decoration: underline;
 	}
 }
+.content {
+	display: flex;
+	background-color: var(--content-background);
+	border-radius: 12px;
+	box-shadow: var(--shadow);
+}
