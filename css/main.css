@@ -92,7 +92,7 @@ body {
   color: var(--text);
 }
 
-.app {
+main {
   display: flex;
   flex-direction: column;
   gap: 1em;
