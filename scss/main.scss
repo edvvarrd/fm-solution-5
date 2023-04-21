@@ -16,6 +16,7 @@ body {
 	font-size: 1.5rem;
 	line-height: 2.5rem;
 	color: var(--text);
+	transition: background-color 0.3s;
 }
 main {
 	display: flex;
