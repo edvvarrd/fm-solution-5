@@ -20,7 +20,7 @@ body {
 main {
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
+	gap: 1.5em;
 }
 
 // HEADER
@@ -86,5 +86,18 @@ header {
 
 // RESULT
 .result {
-	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	padding: 2em 0.5em;
+	&__top {
+		display: flex;
+		align-content: center;
+	}
+	&__avatar {
+		margin: 0 1em;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		align-self: center;
+	}
 }

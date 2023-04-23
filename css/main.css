@@ -90,13 +90,12 @@ body {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: var(--text);
-  transition: background-color 0.3s;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 header {
@@ -159,5 +158,18 @@ header .toggleTheme:hover {
 }
 
 .result {
-  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0.5em;
+}
+.result__top {
+  display: flex;
+  align-content: center;
+}
+.result__avatar {
+  margin: 0 1em;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  align-self: center;
 }/*# sourceMappingURL=main.css.map */

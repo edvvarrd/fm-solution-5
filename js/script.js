@@ -1,3 +1,5 @@
+// THEMES
+
 const toggleTheme = document.querySelector('.toggleTheme')
 
 let prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)')
@@ -25,3 +27,29 @@ toggleTheme.addEventListener('click', () => {
 	document.body.classList.toggle('dark')
 	toggleContent()
 })
+
+// API
+
+const URL = 'https://api.github.com/users/'
+const input = document.querySelector('.search__input')
+const search = document.querySelector('.search__enter')
+const avatar = document.querySelector('.result__avatar')
+const nickname = document.querySelector('.result_nickname')
+const login = document.querySelector('.result__login')
+const joined = document.querySelector('.result__joined')
+
+const searchUser = () => {
+	const user = input.value || 'Octocat'
+	fetch(URL + user)
+		.then(res => res.json())
+		.then(res => {
+			avatar.setAttribute('src', res.avatar_url)
+			nickname.textContent = res.name
+			login.textContent = `@${res.login}`
+			joined.textContent = `Joined ${res.created_at}`
+		})
+	// .then(data => console.log(data))
+}
+
+document.addEventListener('DOMContentLoaded', searchUser)
+search.addEventListener('click', searchUser)
