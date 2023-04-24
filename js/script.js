@@ -50,11 +50,7 @@ const showError = () => {
 
 const searchUser = () => {
 	const user = input.value || 'Octocat'
-	fetch(URL + user, {
-		headers: {
-			authorization: 'token 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',
-		},
-	})
+	fetch(URL + user)
 		.then(res => res.json())
 		.then(res => {
 			if (res.message == 'Not Found') {
