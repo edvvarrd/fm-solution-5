@@ -37,6 +37,10 @@ const avatar = document.querySelector('.result__avatar')
 const nickname = document.querySelector('.result_nickname')
 const login = document.querySelector('.result__login')
 const joined = document.querySelector('.result__joined')
+const description = document.querySelector('.result__description')
+const repos = document.querySelector('.result__repos')
+const followers = document.querySelector('.result__followers')
+const following = document.querySelector('.result__following')
 
 const searchUser = () => {
 	const user = input.value || 'Octocat'
@@ -44,9 +48,26 @@ const searchUser = () => {
 		.then(res => res.json())
 		.then(res => {
 			avatar.setAttribute('src', res.avatar_url)
+
 			nickname.textContent = res.name
+
 			login.textContent = `@${res.login}`
+
 			joined.textContent = `Joined ${res.created_at}`
+
+			if (res.bio !== null) {
+				description.textContent = res.bio
+				description.classList.remove('not-active')
+			} else {
+				description.textContent = `This profile has no bio`
+				description.classList.add('not-active')
+			}
+
+			repos.textContent = res.public_repos
+
+			followers.textContent = res.followers
+
+			following.textContent = res.following
 		})
 	// .then(data => console.log(data))
 }
