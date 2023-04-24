@@ -46,7 +46,11 @@ const error = document.querySelector('.search__error')
 
 const searchUser = () => {
 	const user = input.value || 'Octocat'
-	fetch(URL + user)
+	fetch(URL + user, {
+		headers: {
+			authorization: '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',
+		},
+	})
 		.then(res => res.json())
 		.then(res => {
 			avatar.setAttribute('src', res.avatar_url)
