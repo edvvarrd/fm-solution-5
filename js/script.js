@@ -42,41 +42,49 @@ const repos = document.querySelector('.result__repos')
 const followers = document.querySelector('.result__followers')
 const following = document.querySelector('.result__following')
 
-const error = document.querySelector('.search__error')
+const notfound = document.querySelector('.search__error')
+
+const showError = () => {
+	notfound.textContent = 'No result'
+}
 
 const searchUser = () => {
 	const user = input.value || 'Octocat'
 	fetch(URL + user, {
 		headers: {
-			authorization: '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',
+			authorization: 'token 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',
 		},
 	})
 		.then(res => res.json())
 		.then(res => {
-			avatar.setAttribute('src', res.avatar_url)
-
-			nickname.textContent = res.name
-
-			login.textContent = `@${res.login}`
-
-			joined.textContent = `Joined ${res.created_at}`
-
-			if (res.bio !== null) {
-				description.textContent = res.bio
-				description.classList.remove('not-active')
+			if (res.message == 'Not Found') {
+				showError()
+				return
 			} else {
-				description.textContent = `This profile has no bio`
-				description.classList.add('not-active')
+				avatar.setAttribute('src', res.avatar_url)
+
+				nickname.textContent = res.name
+
+				login.textContent = `@${res.login}`
+
+				joined.textContent = `Joined ${res.created_at}`
+
+				if (res.bio !== null) {
+					description.textContent = res.bio
+					description.classList.remove('not-active')
+				} else {
+					description.textContent = `This profile has no bio`
+					description.classList.add('not-active')
+				}
+
+				repos.textContent = res.public_repos
+
+				followers.textContent = res.followers
+
+				following.textContent = res.following
+				notfound.textContent = ''
 			}
-
-			repos.textContent = res.public_repos
-
-			followers.textContent = res.followers
-
-			following.textContent = res.following
 		})
-		.catch((error.textContext = 'No result'))
-	// .then(data => console.log(data))
 }
 
 document.addEventListener('DOMContentLoaded', searchUser)
