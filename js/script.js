@@ -52,7 +52,7 @@ const searchUser = () => {
 	const user = input.value || 'Octocat'
 	fetch(URL + user, {
 		headers: {
-			authorization: 'token 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',
+			authorization: 'token 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',
 		},
 	})
 		.then(res => res.json())
