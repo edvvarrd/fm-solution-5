@@ -42,6 +42,8 @@ const repos = document.querySelector('.result__repos')
 const followers = document.querySelector('.result__followers')
 const following = document.querySelector('.result__following')
 
+const error = document.querySelector('.search__error')
+
 const searchUser = () => {
 	const user = input.value || 'Octocat'
 	fetch(URL + user)
@@ -69,6 +71,7 @@ const searchUser = () => {
 
 			following.textContent = res.following
 		})
+		.catch((error.textContext = 'No result'))
 	// .then(data => console.log(data))
 }
 

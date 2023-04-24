@@ -55,6 +55,7 @@ header {
 
 // SEARCH INPUT
 .search {
+	display: flex;
 	gap: 0.6em;
 	align-items: center;
 	padding: 0.5em 0.5em;
@@ -81,6 +82,13 @@ header {
 		&:hover {
 			background-color: var(--primary-active);
 		}
+	}
+	&__error {
+		color: #f74646;
+		font-size: 1.5rem;
+		font-weight: 700;
+		letter-spacing: 0.2rem;
+		width: 15%;
 	}
 }
 
