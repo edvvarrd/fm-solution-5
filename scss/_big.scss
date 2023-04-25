@@ -1,3 +1,23 @@
-// @media (min-width: 992px) {
-
-// }
+@media (min-width: 768px) {
+	.wrapper {
+		max-width: 730px;
+	}
+	.desktop_result {
+		width: 75%;
+		margin-left: 25%;
+	}
+	.result {
+		position: relative;
+		.desktop_avatar {
+			position: absolute;
+			left: 0;
+			width: 30%;
+			display: flex;
+			justify-content: center;
+		}
+		&__joined {
+			position: absolute;
+			right: 2em;
+		}
+	}
+}
