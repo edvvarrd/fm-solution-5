@@ -188,7 +188,7 @@ header .toggleTheme:hover {
 .result__stats {
   display: flex;
   justify-content: space-around;
-  padding: 1em 0.5em;
+  padding: 1em 1em;
   background-color: var(--background);
   border-radius: 12px;
 }
@@ -221,13 +221,12 @@ header .toggleTheme:hover {
     margin-right: 2.5em;
   }
   .result__stats {
-    justify-content: flex-start;
+    padding: 1em 2.5em;
   }
   .result__stats span {
-    width: 25%;
-    font-size: 1.3rem;
     align-items: flex-start;
-    margin: 0 2.5em;
+    width: 33%;
+    font-size: 1.3rem;
   }
   .result__stats span h2 {
     font-size: 2.2rem;
