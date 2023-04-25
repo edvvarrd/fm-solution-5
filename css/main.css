@@ -233,7 +233,7 @@ header .toggleTheme:hover {
     font-size: 2.2rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .wrapper {
     max-width: 730px;
   }
@@ -241,8 +241,9 @@ header .toggleTheme:hover {
     position: relative;
   }
   .result {
-    width: 75%;
-    margin-left: 25%;
+    width: 70%;
+    margin-left: 30%;
+    padding-left: 0;
   }
   .result .desktop_avatar {
     position: absolute;
@@ -250,6 +251,9 @@ header .toggleTheme:hover {
     width: 30%;
     display: flex;
     justify-content: center;
+  }
+  .result__avatar {
+    margin: 0;
   }
   .result__joined {
     position: absolute;
