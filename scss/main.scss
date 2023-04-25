@@ -126,6 +126,18 @@ header {
 			font-size: 1.1rem;
 		}
 	}
+	&__links {
+		margin-top: 1em;
+		padding: 1em 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.4em;
+		span {
+			display: flex;
+			align-items: center;
+			gap: 1em;
+		}
+	}
 }
 
 @import 'medium';

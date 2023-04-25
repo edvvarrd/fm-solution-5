@@ -32,5 +32,14 @@
 				}
 			}
 		}
+		&__links {
+			
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 0.7em;
+			span {
+				width: 48%;
+			}
+		}
 	}
 }
