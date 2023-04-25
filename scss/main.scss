@@ -1,8 +1,6 @@
 @use 'colors';
 @use 'reset';
 @use 'components';
-@use 'medium';
-@use 'big';
 
 // BODY
 body {
@@ -67,7 +65,6 @@ header {
 	&__input {
 		all: unset;
 		width: 100%;
-		font-size: 1.3rem;
 	}
 	&__enter {
 		padding: 1.2em 1.5em;
@@ -85,10 +82,9 @@ header {
 	}
 	&__error {
 		color: #f74646;
-		font-size: 1.5rem;
 		font-weight: 700;
 		letter-spacing: 0.2rem;
-		width: 15%;
+		white-space: nowrap;
 	}
 }
 
@@ -104,7 +100,6 @@ header {
 	&__avatar {
 		margin-right: 1.5em;
 		width: 70px;
-		height: 70px;
 		border-radius: 50%;
 		align-self: center;
 	}
@@ -113,7 +108,8 @@ header {
 	}
 	&__stats {
 		display: flex;
-		padding: 1em 1em;
+		justify-content: space-around;
+		padding: 1em 2em;
 		background-color: var(--background);
 		border-radius: 12px;
 		span {
@@ -122,6 +118,10 @@ header {
 			flex-direction: column;
 			align-items: center;
 			gap: 0.5em;
+			font-size: 1.1rem;
 		}
 	}
 }
+
+@import 'medium';
+@import 'big';

@@ -59,11 +59,6 @@ h3 {
   color: var(--primary);
 }
 
-h4 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-}
-
 a {
   text-decoration: none;
   color: var(--text);
@@ -72,7 +67,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.not-active {
+.undefined {
   opacity: 0.6;
 }
 
@@ -145,7 +140,6 @@ header .toggleTheme:hover {
 .search__input {
   all: unset;
   width: 100%;
-  font-size: 1.3rem;
 }
 .search__enter {
   padding: 1.2em 1.5em;
@@ -163,10 +157,9 @@ header .toggleTheme:hover {
 }
 .search__error {
   color: #f74646;
-  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  width: 15%;
+  white-space: nowrap;
 }
 
 .result {
@@ -181,7 +174,6 @@ header .toggleTheme:hover {
 .result__avatar {
   margin-right: 1.5em;
   width: 70px;
-  height: 70px;
   border-radius: 50%;
   align-self: center;
 }
@@ -190,7 +182,8 @@ header .toggleTheme:hover {
 }
 .result__stats {
   display: flex;
-  padding: 1em 1em;
+  justify-content: space-around;
+  padding: 1em 2em;
   background-color: var(--background);
   border-radius: 12px;
 }
@@ -200,4 +193,34 @@ header .toggleTheme:hover {
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+  .search__input {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .result__avatar {
+    width: 117px;
+    margin-right: 2.5em;
+  }
+  .result__stats span {
+    font-size: 1.3rem;
+    align-items: flex-start;
+    margin: 0 2.5em;
+  }
+  .result__stats span h2 {
+    font-size: 2.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -67,10 +67,10 @@ const searchUser = () => {
 
 				if (res.bio !== null) {
 					description.textContent = res.bio
-					description.classList.remove('not-active')
+					description.classList.remove('undefined')
 				} else {
 					description.textContent = `This profile has no bio`
-					description.classList.add('not-active')
+					description.classList.add('undefined')
 				}
 
 				repos.textContent = res.public_repos
