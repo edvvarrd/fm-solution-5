@@ -209,8 +209,13 @@ header .toggleTheme:hover {
 }
 .result__links span {
   display: flex;
-  align-items: center;
   gap: 1em;
+  align-items: center;
+}
+.result__links span svg {
+  width: 20px;
+  height: 20px;
+  overflow: visible;
 }
 
 @media (min-width: 586px) {
