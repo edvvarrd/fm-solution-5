@@ -100,7 +100,7 @@ main {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 1em 0;
+  margin-bottom: 2em;
 }
 header .logo {
   color: var(--logo);
@@ -205,12 +205,13 @@ header .toggleTheme:hover {
   padding: 1em 0;
   display: flex;
   flex-direction: column;
-  gap: 0.4em;
+  gap: 0.5em;
 }
 .result__links span {
   display: flex;
   gap: 1em;
   align-items: center;
+  overflow: hidden;
 }
 .result__links span svg {
   width: 20px;
@@ -252,7 +253,7 @@ header .toggleTheme:hover {
   .result__links {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.7em;
+    gap: 0.8em;
   }
   .result__links span {
     width: 48%;

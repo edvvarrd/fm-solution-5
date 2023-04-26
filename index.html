@@ -18,50 +18,52 @@
 
 <body>
 
-  <main class="wrapper">
+  <div class="wrapper">
     <header>
       <h1 class="logo">devfinder</h1>
       <button class="toggleTheme"></button>
     </header>
-    <section class="content search">
-      <img src="./assets/icon-search.svg" class="search__icon">
-      <input type="text" class="search__input" placeholder="Search GitHub username..."></input>
-      <span class="search__error"></span>
-      <button class="search__enter">Search</button>
-    </section>
-    <section class="content">
-      <div class="result">
-        <div class="result__top">
-          <div class="desktop_avatar">
-            <img src="" alt="User avatar" class="result__avatar">
+    <main>
+      <section class="content search">
+        <img src="./assets/icon-search.svg" class="search__icon">
+        <input type="text" class="search__input" placeholder="Search GitHub username..."></input>
+        <span class="search__error"></span>
+        <button class="search__enter">Search</button>
+      </section>
+      <section class="content">
+        <div class="result">
+          <div class="result__top">
+            <div class="desktop_avatar">
+              <img src="" alt="User avatar" class="result__avatar">
+            </div>
+            <div class="result__top-info">
+              <h2 class="result_nickname"></h2>
+              <h3 class="result__login"></h3>
+              <p class="result__joined"></p>
+            </div>
           </div>
-          <div class="result__top-info">
-            <h2 class="result_nickname"></h2>
-            <h3 class="result__login"></h3>
-            <p class="result__joined"></p>
+          <p class="result__description"></p>
+          <div class="result__stats">
+            <span>Repos
+              <h2 class="result__repos">0</h2>
+            </span>
+            <span>Followers
+              <h2 class="result__followers">0</h2>
+            </span>
+            <span>Following
+              <h2 class="result__following">0</h2>
+            </span>
+          </div>
+          <div class="result__links">
+            <span class="result__links-location"></span>
+            <span class="result__links-website"></span>
+            <span class="result__links-twitter"></span>
+            <span class="result__links-company"></span>
           </div>
         </div>
-        <p class="result__description"></p>
-        <div class="result__stats">
-          <span>Repos
-            <h2 class="result__repos">0</h2>
-          </span>
-          <span>Followers
-            <h2 class="result__followers">0</h2>
-          </span>
-          <span>Following
-            <h2 class="result__following">0</h2>
-          </span>
-        </div>
-        <div class="result__links">
-          <span class="result__links-location"></span>
-          <span class="result__links-website"></span>
-          <span class="result__links-twitter"></span>
-          <span class="result__links-company"></span>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
   <script src="js/script.js"></script>
 
 </body>
