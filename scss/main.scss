@@ -118,7 +118,7 @@ header {
 		padding: 1em 1em;
 		background-color: var(--background);
 		border-radius: 12px;
-		span {
+		div {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -132,7 +132,7 @@ header {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5em;
-		span {
+		div {
 			display: flex;
 			gap: 1em;
 			align-items: center;

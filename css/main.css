@@ -193,7 +193,7 @@ header .toggleTheme:hover {
   background-color: var(--background);
   border-radius: 12px;
 }
-.result__stats span {
+.result__stats div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,13 +207,13 @@ header .toggleTheme:hover {
   flex-direction: column;
   gap: 0.5em;
 }
-.result__links span {
+.result__links div {
   display: flex;
   gap: 1em;
   align-items: center;
   overflow: hidden;
 }
-.result__links span svg {
+.result__links div svg {
   width: 20px;
   height: 20px;
   overflow: visible;
@@ -242,12 +242,12 @@ header .toggleTheme:hover {
   .result__stats {
     padding: 1em 2.5em;
   }
-  .result__stats span {
+  .result__stats div {
     align-items: flex-start;
     width: 33%;
     font-size: 1.3rem;
   }
-  .result__stats span h2 {
+  .result__stats div h2 {
     font-size: 2.2rem;
   }
   .result__links {
@@ -255,7 +255,7 @@ header .toggleTheme:hover {
     flex-wrap: wrap;
     gap: 0.8em;
   }
-  .result__links span {
+  .result__links div {
     width: 48%;
   }
 }
