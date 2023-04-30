@@ -5,15 +5,6 @@ const toggleTheme = document.querySelector('.toggleTheme')
 // MATCHMEDIA PROPERTY IS NOT CHANGABLE, SO I NEEDED TO ASSIGN IT TO A VARIABLE
 let prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)')
 
-// EVENT LISTENERS
-
-document.addEventListener('DOMContentLoaded', checkThemePreferences)
-
-toggleTheme.addEventListener('click', () => {
-	document.body.classList.toggle('dark')
-	toggleContent()
-})
-
 // CALLBACKS
 
 // CHANGES THEME BUTTON'S CONTENT
@@ -27,12 +18,21 @@ const toggleContent = () => {
 	}
 }
 // CHECKS IF DEVICE'S PREFERRED THEME IS DARK
-function checkThemePreferences() {
+const checkThemePreferences = () => {
 	if (prefersDarkTheme.matches) {
 		document.body.classList.add('dark')
 	}
 	toggleContent()
 }
+
+// EVENT LISTENERS
+
+document.addEventListener('DOMContentLoaded', checkThemePreferences)
+
+toggleTheme.addEventListener('click', () => {
+	document.body.classList.toggle('dark')
+	toggleContent()
+})
 
 // API
 
@@ -87,18 +87,6 @@ const updateResult = res => {
 
 	updateContact(res)
 }
-
-// EVENT LISTENERS
-
-document.addEventListener('DOMContentLoaded', searchUser)
-
-search.addEventListener('click', searchUser)
-
-input.addEventListener('keyup', e => {
-	if (e.key === 'Enter') {
-		searchUser()
-	}
-})
 
 // CALLBACKS
 
@@ -207,3 +195,15 @@ const updateContact = res => {
 		company.classList.add('undefined')
 	}
 }
+
+// EVENT LISTENERS
+
+document.addEventListener('DOMContentLoaded', searchUser)
+
+search.addEventListener('click', searchUser)
+
+input.addEventListener('keyup', e => {
+	if (e.key === 'Enter') {
+		searchUser()
+	}
+})
