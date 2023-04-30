@@ -2,7 +2,7 @@
 
 const toggleTheme = document.querySelector('.toggleTheme')
 
-// MATCHMEDIA PROPERTY IS NOT CHANGABLE, SO I NEEDED TO ASSIGN IT TO VARIABLE
+// MATCHMEDIA PROPERTY IS NOT CHANGABLE, SO I NEEDED TO ASSIGN IT TO A VARIABLE
 let prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)')
 
 // EVENT LISTENERS

@@ -211,6 +211,7 @@ header .toggleTheme:hover {
   display: flex;
   gap: 1em;
   align-items: center;
+  white-space: nowrap;
   overflow: hidden;
 }
 .result__links div svg {
