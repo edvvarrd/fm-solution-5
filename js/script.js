@@ -58,11 +58,7 @@ const notfound = document.querySelector('.search__error')
 async function searchUser() {
 	try {
 		const user = input.value || 'Octocat'
-		const data = await fetch(URL + user, {
-			headers: {
-				authorization: 'token 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',
-			},
-		})
+		const data = await fetch(URL + user)
 		if (data.status === 404) {
 			notfound.textContent = 'No result'
 		} else {
