@@ -48,7 +48,7 @@ h2 {
 }
 
 h1,
-h1 {
+h2 {
   font-weight: 700;
   color: var(--text-secondary);
 }
@@ -220,14 +220,14 @@ header .toggleTheme:hover {
   flex-direction: column;
   gap: 0.5em;
 }
-.result__links div {
+.result__links li {
   display: flex;
   gap: 1em;
   align-items: center;
   white-space: nowrap;
   overflow: hidden;
 }
-.result__links div svg {
+.result__links li svg {
   width: 20px;
   height: 20px;
   overflow: visible;
@@ -258,7 +258,7 @@ header .toggleTheme:hover {
     flex-wrap: wrap;
     gap: 0.8em;
   }
-  .result__links div {
+  .result__links li {
     width: 48%;
   }
 }
@@ -274,7 +274,7 @@ header .toggleTheme:hover {
     margin-left: 30%;
     padding-left: 0;
   }
-  .result .desktop_avatar {
+  .result__avatar-desktop {
     position: absolute;
     left: 0;
     width: 30%;
