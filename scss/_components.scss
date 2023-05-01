@@ -37,3 +37,16 @@ a {
 	border-radius: 12px;
 	box-shadow: var(--shadow);
 }
+@media (min-width: 586px) {
+	body {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 2.6rem;
+		line-height: 3.2rem;
+	}
+	h3 {
+		font-size: 1.6rem;
+		line-height: 2.5rem;
+	}
+}
