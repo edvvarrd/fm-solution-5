@@ -34,7 +34,7 @@ html {
 .wrapper {
   width: 100%;
   max-width: 573px;
-  padding: 0 1em;
+  padding: 0 0.5em;
 }
 
 h1 {
@@ -107,13 +107,13 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 header .logo {
   color: var(--logo);

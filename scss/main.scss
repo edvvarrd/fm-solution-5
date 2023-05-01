@@ -18,14 +18,14 @@ body {
 main {
 	display: flex;
 	flex-direction: column;
-	gap: 1.5em;
+	gap: 2em;
 }
 
 // HEADER
 header {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 2em;
+	margin-bottom: 3em;
 	.logo {
 		color: var(--logo);
 	}
