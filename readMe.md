@@ -1,4 +1,4 @@
-# Frontend Mentor - Art gallery website
+# Frontend Mentor - Github user search app
 
 ## The challenge
 
