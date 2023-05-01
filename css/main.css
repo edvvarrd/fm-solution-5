@@ -114,7 +114,7 @@ main {
 header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 header .logo {
   color: var(--logo);
