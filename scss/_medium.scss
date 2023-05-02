@@ -22,12 +22,11 @@
 			}
 		}
 		&__links {
-			flex-direction: row;
-			flex-wrap: wrap;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			grid-auto-flow: column;
 			gap: 0.8em;
-			li {
-				width: 48%;
-			}
 		}
 	}
 }

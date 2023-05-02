@@ -223,7 +223,7 @@ header .toggleTheme:hover {
 }
 .result__links li {
   display: flex;
-  gap: 1em;
+  gap: 1.2em;
   align-items: center;
   white-space: nowrap;
   overflow: hidden;
@@ -255,12 +255,11 @@ header .toggleTheme:hover {
     font-size: 2.2rem;
   }
   .result__links {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
     gap: 0.8em;
-  }
-  .result__links li {
-    width: 48%;
   }
 }
 @media (min-width: 992px) {
